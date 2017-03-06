@@ -1,0 +1,466 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "hey",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "howdy",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hey there",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hello",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hi",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "i'm looking for a traffic speed",
+        "intent": "info_speed",
+        "entities": []
+      },
+      {
+        "text": "i'm looking for a traffic speed on the way to Amsterdam from Den haag",
+        "intent": "info_speed",
+        "entities": [
+          {
+            "start": 46,
+            "end": 55,
+            "value": "Amsterdam",
+            "entity": "destination"
+          },
+          {
+            "start": 61,
+            "end": 69,
+            "value": "Den haag",
+            "entity": "source"
+          }
+        ]
+      },
+      {
+        "text": "show me traffic speed towards Amsterdam",
+        "intent": "info_speed",
+        "entities": [
+          {
+            "start": 30,
+            "end": 39,
+            "value": "Amsterdam",
+            "entity": "destination"
+          }
+        ]
+      },
+      {
+        "text": "show me traffic speed towards Delft from Den Haag",
+        "intent": "info_speed",
+        "entities": [
+          {
+            "start": 41,
+            "end": 49,
+            "value": "Den Haag",
+            "entity": "source"
+          },
+          {
+            "start": 30,
+            "end": 35,
+            "value": "Delft",
+            "entity": "destination"
+          }
+        ]
+      },
+      {
+        "text": "southbound to Rotterdam",
+        "intent": "info_speed",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "southbound",
+            "entity": "direction"
+          },
+          {
+            "start": 14,
+            "end": 23,
+            "value": "Rotterdam",
+            "entity": "destination"
+          }
+        ]
+      },
+      {
+        "text": "yes",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "yep",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "yeah",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "show me traffic speed on A4 towards Rotterdam",
+        "intent": "info_speed",
+        "entities": [
+          {
+            "start": 25,
+            "end": 27,
+            "value": "A4",
+            "entity": "road"
+          },
+          {
+            "start": 36,
+            "end": 45,
+            "value": "Rotterdam",
+            "entity": "destination"
+          }
+        ]
+      },
+      {
+        "text": "bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "goodbye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "good bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "stop",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "end",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "I am looking for traffic speed on A13",
+        "intent": "info_speed",
+        "entities": [
+          {
+            "start": 34,
+            "end": 37,
+            "value": "A13",
+            "entity": "road"
+          }
+        ]
+      },
+      {
+        "text": "search for traffic speed",
+        "intent": "info_speed",
+        "entities": []
+      },
+      {
+        "text": "anywhere on A12",
+        "intent": "info_speed",
+        "entities": [
+          {
+            "start": 12,
+            "end": 15,
+            "value": "A12",
+            "entity": "road"
+          }
+        ]
+      },
+      {
+        "text": "eastbound to Utrecht",
+        "intent": "info_speed",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "eastbound",
+            "entity": "direction"
+          },
+          {
+            "start": 13,
+            "end": 20,
+            "value": "Utrecht",
+            "entity": "destination"
+          }
+        ]
+      },
+      {
+        "text": "indeed",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "that's right",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "ok",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "great",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "What is the traffic flow to Amsterdam",
+        "intent": "info_flow",
+        "entities": [
+          {
+            "start": 28,
+            "end": 37,
+            "value": "Amsterdam",
+            "entity": "destination"
+          }
+        ]
+      },
+      {
+        "text": "show me the traffic congestion on the roads towards Rotterdam",
+        "intent": "info_flow",
+        "entities": [
+          {
+            "start": 51,
+            "end": 61,
+            "value": " Rotterdam",
+            "entity": "destination"
+          }
+        ]
+      },
+      {
+        "text": "I am looking for traffic congestion",
+        "intent": "info_flow",
+        "entities": []
+      },
+      {
+        "text": "I am searching for traffic congestion from Den Haag to Delft",
+        "intent": "info_flow",
+        "entities": [
+          {
+            "start": 43,
+            "end": 51,
+            "value": "Den Haag",
+            "entity": "source"
+          },
+          {
+            "start": 55,
+            "end": 60,
+            "value": "Delft",
+            "entity": "destination"
+          }
+        ]
+      },
+      {
+        "text": "what is the traffic flow",
+        "intent": "info_flow",
+        "entities": []
+      },
+      {
+        "text": "traffic flow anywhere on A10",
+        "intent": "info_flow",
+        "entities": [
+          {
+            "start": 24,
+            "end": 28,
+            "value": " A10",
+            "entity": "road"
+          }
+        ]
+      },
+      {
+        "text": "What is the traffic flow to Amsterdam",
+        "intent": "info_flow",
+        "entities": []
+      },
+      {
+        "text": "show me the traffic congestion on the roads towards Rotterdam",
+        "intent": "info_flow",
+        "entities": []
+      },
+      {
+        "text": "I am looking for traffic congestion",
+        "intent": "info_flow",
+        "entities": []
+      },
+      {
+        "text": "I am searching for traffic congestion from Den Haag to Delft",
+        "intent": "info_flow",
+        "entities": []
+      },
+      {
+        "text": "what is the traffic flow",
+        "intent": "info_flow",
+        "entities": []
+      },
+      {
+        "text": "traffic flow anywhere on A10",
+        "intent": "info_flow",
+        "entities": []
+      },
+      {
+        "text": "traffic flow A13",
+        "intent": "info_flow",
+        "entities": [
+          {
+            "start": 13,
+            "end": 16,
+            "value": "A13",
+            "entity": "road"
+          }
+        ]
+      },
+      {
+        "text": "Traffic flow starting from Den haag to Amsterdam",
+        "intent": "info_flow",
+        "entities": [
+          {
+            "start": 27,
+            "end": 35,
+            "value": "Den haag",
+            "entity": "source"
+          },
+          {
+            "start": 39,
+            "end": 48,
+            "value": "Amsterdam",
+            "entity": "destination"
+          }
+        ]
+      },
+      {
+        "text": "traffic flow on road Den haag to Amsterdam",
+        "intent": "info_flow",
+        "entities": []
+      }
+    ],
+    "intent_examples": [
+      {
+        "text": "hey",
+        "intent": "greet"
+      },
+      {
+        "text": "howdy",
+        "intent": "greet"
+      },
+      {
+        "text": "hey there",
+        "intent": "greet"
+      },
+      {
+        "text": "hello",
+        "intent": "greet"
+      },
+      {
+        "text": "hi",
+        "intent": "greet"
+      },
+      {
+        "text": "i'm looking for a traffic speed",
+        "intent": "info_speed"
+      },
+      {
+        "text": "i'm looking for a traffic speed on the way to Amsterdam from Den haag",
+        "intent": "info_speed"
+      },
+      {
+        "text": "show me traffic speed towards Amsterdam",
+        "intent": "info_speed"
+      },
+      {
+        "text": "show me traffic speed towards Delft from Den Haag",
+        "intent": "info_speed"
+      },
+      {
+        "text": "southbound to Rotterdam",
+        "intent": "info_speed"
+      },
+      {
+        "text": "yes",
+        "intent": "affirm"
+      },
+      {
+        "text": "yep",
+        "intent": "affirm"
+      },
+      {
+        "text": "yeah",
+        "intent": "affirm"
+      },
+      {
+        "text": "show me traffic speed on A4 towards Rotterdam",
+        "intent": "info_speed"
+      },
+      {
+        "text": "bye",
+        "intent": "goodbye"
+      },
+      {
+        "text": "goodbye",
+        "intent": "goodbye"
+      },
+      {
+        "text": "good bye",
+        "intent": "goodbye"
+      },
+      {
+        "text": "stop",
+        "intent": "goodbye"
+      },
+      {
+        "text": "end",
+        "intent": "goodbye"
+      },
+      {
+        "text": "I am looking for traffic speed on A13",
+        "intent": "info_speed"
+      },
+      {
+        "text": "search for traffic speed",
+        "intent": "info_speed"
+      },
+      {
+        "text": "anywhere on A12",
+        "intent": "info_speed"
+      },
+      {
+        "text": "eastbound to Utrecht",
+        "intent": "info_speed"
+      },
+      {
+        "text": "indeed",
+        "intent": "affirm"
+      },
+      {
+        "text": "that's right",
+        "intent": "affirm"
+      },
+      {
+        "text": "ok",
+        "intent": "affirm"
+      },
+      {
+        "text": "great",
+        "intent": "affirm"
+      }
+    ]
+  }
+}

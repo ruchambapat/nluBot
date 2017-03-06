@@ -1,0 +1,5 @@
+{
+  "backend": "spacy_sklearn",
+  "path" : "F:/2016-17/Master Thesis/Prototype1/rasa_nlu-0.6b0 (1)/rasa_nlu-0.6b0",
+  "data" : "F:/2016-17/Master Thesis/Prototype1/rasa_nlu-0.6b0 (1)/rasa_nlu-0.6b0/data/demo-rasa.json"
+}
